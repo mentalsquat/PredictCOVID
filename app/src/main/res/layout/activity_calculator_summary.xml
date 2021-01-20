@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorSummary"
+    android:background="@color/grey">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Wynik:"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:id="@+id/top"/>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins"
+                android:textColor="#FF0000"
+                android:textSize="25dp"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result">
+
+
+                <Button
+                    android:id="@+id/share_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Share" />
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Zapisz" />
+            </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvWarring"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/warring"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/answers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_layout"
+                android:fontFamily="@font/poppins"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/formula"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text="@string/P"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text="@string/Q"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text="@string/pp"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text="@string/t"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text="@string/n"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text="@string/r"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text="@string/QQ"/>
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:text="Link do artykułu:"/>
+
+            <TextView
+                android:id="@+id/link"
+                android:autoLink="all"
+                android:clickable="true"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="10sp"
+                android:textColor="#fff"
+                android:text="www.researchgate.net/publication/340919920_Association_of_infected_probability_of_COVID-19_with_ventilation_rates_in_confined_spaces_a_Wells-Riley_equation_based_investigation"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

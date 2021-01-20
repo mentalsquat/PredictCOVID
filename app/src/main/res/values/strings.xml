@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PredictCOVID</string>
+    <color name="grey">#302C2C</color>
+    <color name="bluebg">#004c8a</color>
+    <string-array name="first_answer">
+        <item>tak</item>
+        <item>nie</item>
+    </string-array>
+    <string name="title_activity_tracker">MainActivity</string>
+    <string name="title_home">Strona Startowa</string>
+    <string name="title_country">Kraje</string>
+    <string name="title_calculator">Kalkulator</string>
+    <string name="title_tracker">Tracker</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawe</string>
+    <string name="formula"><html> P = 1 - <i>e</i><sup><i>qpt</i>(1-<i>n</i>)(1-<i>r</i>)/<i>Q</i></sup></html></string>
+    <string name="warring">Uwaga! Wynik jest tylko przybliżeniem, nie może zostać użyty jako oficialne źródło danych medycznych!</string>
+    <string name="P">P - prawdopodobieństwo zarażenia </string>
+    <string name="Q"><html><i>q</i> - współczynnik generowania cząsteczek wirusa przez jedną osobe zarażoną (h<sup>-1</sup>) jest to jednosta nie fizyczna. W naszym przypadku przyjmujemy wartość średnią <i>q</i> = 32(h<sup>-1</sup>)</html></string>
+    <string name="pp"><html><i>p</i> -  współczynnik wentylacji płucnej osoby na godzinę (m<sup>3</sup>/h) gdzie m to metry a h godzinny. W naszym przypadku przyjmujemy wartość średnią 0.3 m<sup>3</sup>/h</html></string>
+    <string name="t"><html><i>t</i> - czas narażenia</html></string>
+    <string name="n"><html><i>n</i> - wydajność maski podczas wydychania. W naszym przypadku przyjmujemy 50%</html></string>
+    <string name="r"><html><i>r</i> - wydajnośc maski podczas wdychania. W naszym przypadku przyjmujemy 50%</html></string>
+    <string name="QQ"><html><i>Q</i> - współczynnik wentylacji powietrza w pomieszczeniu (m<sup>3</sup>/h)</html></string>
+</resources>
